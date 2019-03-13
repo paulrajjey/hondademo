@@ -6,12 +6,44 @@ package com.honda.hondademo;
 
 public class DesignData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DesignData() {
-    }
+	private java.lang.String id;
+	private java.lang.String model;
+	private java.lang.String designSpec;
 
+	public DesignData() {
+	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.String getModel() {
+		return this.model;
+	}
+
+	public void setModel(java.lang.String model) {
+		this.model = model;
+	}
+
+	public java.lang.String getDesignSpec() {
+		return this.designSpec;
+	}
+
+	public void setDesignSpec(java.lang.String designSpec) {
+		this.designSpec = designSpec;
+	}
+
+	public DesignData(java.lang.String id, java.lang.String model,
+			java.lang.String designSpec) {
+		this.id = id;
+		this.model = model;
+		this.designSpec = designSpec;
+	}
 
 }
