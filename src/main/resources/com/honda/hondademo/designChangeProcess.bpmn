@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_SEzzoPoVEeiVPuFUSJ4tMQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
-  <bpmn2:itemDefinition id="_changedesignItem" structureRef="com.hondademo.hondaapprovalprocess.DesignData"/>
-  <bpmn2:itemDefinition id="_approvalListItem" structureRef="com.hondademo.hondaapprovalprocess.ApprovalList"/>
-  <bpmn2:itemDefinition id="_approverItem" structureRef="com.hondademo.hondaapprovalprocess.Approver"/>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_Y74z4EU6EemhwMtxCtEoLg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_changedesignItem" structureRef="com.honda.hondademo.DesignData"/>
+  <bpmn2:itemDefinition id="_approverItem" structureRef="com.honda.hondademo.Approver"/>
   <bpmn2:itemDefinition id="_approvalLstItem" structureRef="java.util.List"/>
   <bpmn2:itemDefinition id="_changeinputItem" structureRef="com.hondademo.hondaapprovalprocess.DesignData"/>
   <bpmn2:itemDefinition id="_approverinputItem" structureRef="com.hondademo.hondaapprovalprocess.Approver"/>
@@ -16,22 +15,13 @@
   <bpmn2:itemDefinition id="__D8226EC5-82F7-4941-A04D-B405198468F4_GroupIdInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__D8226EC5-82F7-4941-A04D-B405198468F4_changeTskInInputXItem" structureRef="com.hondademo.hondaapprovalprocess.DesignData"/>
   <bpmn2:process id="hondaapprovalprocess.designChangeProcessor" drools:packageName="com.hondademo.hondaapprovalprocess" drools:version="1.0" drools:adHoc="false" name="designChangeProcessor" isExecutable="true">
-    <bpmn2:documentation id="_SEzzofoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
     <bpmn2:property id="changedesign" itemSubjectRef="_changedesignItem" name="changedesign"/>
-    <bpmn2:property id="approvalList" itemSubjectRef="_approvalListItem" name="approvalList"/>
     <bpmn2:property id="approver" itemSubjectRef="_approverItem" name="approver"/>
     <bpmn2:property id="approvalLst" itemSubjectRef="_approvalLstItem" name="approvalLst"/>
-    <bpmn2:sequenceFlow id="_9658D263-6CDA-48A6-B7CD-A907602C226D" sourceRef="_E4A5FFA0-1F60-4EDB-9091-C831BE574113" targetRef="_5A380B07-D729-41F8-85EB-014A92307EF0">
-      <bpmn2:documentation id="_SEzzovoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
-    </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_B54BD029-509C-48FD-ADFD-404C43C7CEC1" sourceRef="_5A380B07-D729-41F8-85EB-014A92307EF0" targetRef="_94CA9B7D-35EF-45B7-9740-709F54CF3380">
-      <bpmn2:documentation id="_SEzzo_oVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
-    </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_679D74B3-C44B-41ED-901E-90AAAF3F3988" sourceRef="_7D0AD522-A63C-41DD-AE10-9BC60B3C4871" targetRef="_E4A5FFA0-1F60-4EDB-9091-C831BE574113">
-      <bpmn2:documentation id="_SEzzpPoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
-    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_9658D263-6CDA-48A6-B7CD-A907602C226D" sourceRef="_E4A5FFA0-1F60-4EDB-9091-C831BE574113" targetRef="_5A380B07-D729-41F8-85EB-014A92307EF0"/>
+    <bpmn2:sequenceFlow id="_B54BD029-509C-48FD-ADFD-404C43C7CEC1" sourceRef="_5A380B07-D729-41F8-85EB-014A92307EF0" targetRef="_94CA9B7D-35EF-45B7-9740-709F54CF3380"/>
+    <bpmn2:sequenceFlow id="_679D74B3-C44B-41ED-901E-90AAAF3F3988" sourceRef="_7D0AD522-A63C-41DD-AE10-9BC60B3C4871" targetRef="_E4A5FFA0-1F60-4EDB-9091-C831BE574113"/>
     <bpmn2:scriptTask id="_E4A5FFA0-1F60-4EDB-9091-C831BE574113" name="Task" scriptFormat="http://www.java.com/java">
-      <bpmn2:documentation id="_SEzzpfoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Task]]></drools:metaValue>
@@ -40,9 +30,9 @@
       <bpmn2:incoming>_679D74B3-C44B-41ED-901E-90AAAF3F3988</bpmn2:incoming>
       <bpmn2:outgoing>_9658D263-6CDA-48A6-B7CD-A907602C226D</bpmn2:outgoing>
       <bpmn2:script><![CDATA[Approver appr = new Approver();
-appr.setUserId("jey");
+appr.setApproverId("jey");
 Approver appr2 = new Approver();
-appr2.setUserId("jey");
+appr2.setApproverId("jey");
 java.util.List approvers = new java.util.ArrayList();
 approvers.add(appr);
 approvers.add(appr2);
@@ -55,15 +45,12 @@ kcontext.setVariable("changedesign",data);
 ]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:endEvent id="_94CA9B7D-35EF-45B7-9740-709F54CF3380">
-      <bpmn2:documentation id="_SE0asPoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:incoming>_B54BD029-509C-48FD-ADFD-404C43C7CEC1</bpmn2:incoming>
     </bpmn2:endEvent>
     <bpmn2:startEvent id="_7D0AD522-A63C-41DD-AE10-9BC60B3C4871">
-      <bpmn2:documentation id="_SE0asfoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:outgoing>_679D74B3-C44B-41ED-901E-90AAAF3F3988</bpmn2:outgoing>
     </bpmn2:startEvent>
     <bpmn2:subProcess id="_5A380B07-D729-41F8-85EB-014A92307EF0" name="multi global approver">
-      <bpmn2:documentation id="_SE0asvoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[multi global approver]]></drools:metaValue>
@@ -71,41 +58,34 @@ kcontext.setVariable("changedesign",data);
       </bpmn2:extensionElements>
       <bpmn2:incoming>_9658D263-6CDA-48A6-B7CD-A907602C226D</bpmn2:incoming>
       <bpmn2:outgoing>_B54BD029-509C-48FD-ADFD-404C43C7CEC1</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_SE0as_oVEeiVPuFUSJ4tMQ">
+      <bpmn2:ioSpecification id="_Y75a8EU6EemhwMtxCtEoLg">
         <bpmn2:dataInput id="_5A380B07-D729-41F8-85EB-014A92307EF0_IN_COLLECTIONInputX" name="IN_COLLECTION"/>
-        <bpmn2:inputSet id="_SE0atPoVEeiVPuFUSJ4tMQ">
+        <bpmn2:inputSet id="_Y75a8UU6EemhwMtxCtEoLg">
           <bpmn2:dataInputRefs>_5A380B07-D729-41F8-85EB-014A92307EF0_IN_COLLECTIONInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_SE0atfoVEeiVPuFUSJ4tMQ"/>
+        <bpmn2:outputSet id="_Y75a8kU6EemhwMtxCtEoLg"/>
       </bpmn2:ioSpecification>
       <bpmn2:property id="changeinput" itemSubjectRef="_changeinputItem" name="changeinput"/>
       <bpmn2:property id="approverinput" itemSubjectRef="_approverinputItem" name="approverinput"/>
-      <bpmn2:dataInputAssociation id="_SE0atvoVEeiVPuFUSJ4tMQ">
+      <bpmn2:dataInputAssociation id="_Y75a80U6EemhwMtxCtEoLg">
         <bpmn2:sourceRef>approvalLst</bpmn2:sourceRef>
         <bpmn2:targetRef>_5A380B07-D729-41F8-85EB-014A92307EF0_IN_COLLECTIONInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:multiInstanceLoopCharacteristics id="_SE0at_oVEeiVPuFUSJ4tMQ">
+      <bpmn2:multiInstanceLoopCharacteristics id="_Y75a9EU6EemhwMtxCtEoLg">
         <bpmn2:loopDataInputRef>_5A380B07-D729-41F8-85EB-014A92307EF0_IN_COLLECTIONInputX</bpmn2:loopDataInputRef>
         <bpmn2:inputDataItem xsi:type="bpmn2:tDataInput" id="_5A380B07-D729-41F8-85EB-014A92307EF0_approverInputX" name="approver"/>
         <bpmn2:outputDataItem xsi:type="bpmn2:tDataOutput" id="_5A380B07-D729-41F8-85EB-014A92307EF0_OutputX" itemSubjectRef="_5A380B07-D729-41F8-85EB-014A92307EF0_multiInstanceItemType_" name=""/>
-        <bpmn2:completionCondition xsi:type="bpmn2:tFormalExpression" id="_SE0auPoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:completionCondition>
+        <bpmn2:completionCondition xsi:type="bpmn2:tFormalExpression" id="_Y75a9UU6EemhwMtxCtEoLg"><![CDATA[]]></bpmn2:completionCondition>
       </bpmn2:multiInstanceLoopCharacteristics>
-      <bpmn2:sequenceFlow id="_778FDB44-2581-4418-8936-AE30E6053760" sourceRef="_D8226EC5-82F7-4941-A04D-B405198468F4" targetRef="_2B9E7963-F675-4677-9E06-94842BB8CD92">
-        <bpmn2:documentation id="_SE0aufoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
-      </bpmn2:sequenceFlow>
-      <bpmn2:sequenceFlow id="_0D9FF4E1-CA81-437F-9A96-23FBFF2A6829" sourceRef="_03BDED82-BC8C-4B98-835E-ACD237B61211" targetRef="_D8226EC5-82F7-4941-A04D-B405198468F4">
-        <bpmn2:documentation id="_SE0auvoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
-      </bpmn2:sequenceFlow>
+      <bpmn2:sequenceFlow id="_778FDB44-2581-4418-8936-AE30E6053760" sourceRef="_D8226EC5-82F7-4941-A04D-B405198468F4" targetRef="_2B9E7963-F675-4677-9E06-94842BB8CD92"/>
+      <bpmn2:sequenceFlow id="_0D9FF4E1-CA81-437F-9A96-23FBFF2A6829" sourceRef="_03BDED82-BC8C-4B98-835E-ACD237B61211" targetRef="_D8226EC5-82F7-4941-A04D-B405198468F4"/>
       <bpmn2:endEvent id="_2B9E7963-F675-4677-9E06-94842BB8CD92">
-        <bpmn2:documentation id="_SE0au_oVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
         <bpmn2:incoming>_778FDB44-2581-4418-8936-AE30E6053760</bpmn2:incoming>
       </bpmn2:endEvent>
       <bpmn2:startEvent id="_03BDED82-BC8C-4B98-835E-ACD237B61211">
-        <bpmn2:documentation id="_SE0avPoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
         <bpmn2:outgoing>_0D9FF4E1-CA81-437F-9A96-23FBFF2A6829</bpmn2:outgoing>
       </bpmn2:startEvent>
       <bpmn2:userTask id="_D8226EC5-82F7-4941-A04D-B405198468F4" name="approval">
-        <bpmn2:documentation id="_SE0avfoVEeiVPuFUSJ4tMQ"><![CDATA[]]></bpmn2:documentation>
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
             <drools:metaValue><![CDATA[approval]]></drools:metaValue>
@@ -113,44 +93,44 @@ kcontext.setVariable("changedesign",data);
         </bpmn2:extensionElements>
         <bpmn2:incoming>_0D9FF4E1-CA81-437F-9A96-23FBFF2A6829</bpmn2:incoming>
         <bpmn2:outgoing>_778FDB44-2581-4418-8936-AE30E6053760</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_SE0avvoVEeiVPuFUSJ4tMQ">
+        <bpmn2:ioSpecification id="_Y75a9kU6EemhwMtxCtEoLg">
           <bpmn2:dataInput id="_D8226EC5-82F7-4941-A04D-B405198468F4_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__D8226EC5-82F7-4941-A04D-B405198468F4_TaskNameInputXItem" name="TaskName"/>
           <bpmn2:dataInput id="_D8226EC5-82F7-4941-A04D-B405198468F4_changeTskInInputX" drools:dtype="com.hondademo.hondaapprovalprocess.DesignData" itemSubjectRef="__D8226EC5-82F7-4941-A04D-B405198468F4_changeTskInInputXItem" name="changeTskIn"/>
           <bpmn2:dataInput id="_D8226EC5-82F7-4941-A04D-B405198468F4_SkippableInputX" drools:dtype="Object" itemSubjectRef="__D8226EC5-82F7-4941-A04D-B405198468F4_SkippableInputXItem" name="Skippable"/>
-          <bpmn2:inputSet id="_SE0av_oVEeiVPuFUSJ4tMQ">
+          <bpmn2:inputSet id="_Y75a90U6EemhwMtxCtEoLg">
             <bpmn2:dataInputRefs>_D8226EC5-82F7-4941-A04D-B405198468F4_TaskNameInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_D8226EC5-82F7-4941-A04D-B405198468F4_changeTskInInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_D8226EC5-82F7-4941-A04D-B405198468F4_SkippableInputX</bpmn2:dataInputRefs>
           </bpmn2:inputSet>
         </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_SE0awPoVEeiVPuFUSJ4tMQ">
+        <bpmn2:dataInputAssociation id="_Y75a-EU6EemhwMtxCtEoLg">
           <bpmn2:targetRef>_D8226EC5-82F7-4941-A04D-B405198468F4_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_SE0awfoVEeiVPuFUSJ4tMQ">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_SE0awvoVEeiVPuFUSJ4tMQ"><![CDATA[Task]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_SE0aw_oVEeiVPuFUSJ4tMQ">_D8226EC5-82F7-4941-A04D-B405198468F4_TaskNameInputX</bpmn2:to>
+          <bpmn2:assignment id="_Y75a-UU6EemhwMtxCtEoLg">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Y75a-kU6EemhwMtxCtEoLg"><![CDATA[Task]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Y75a-0U6EemhwMtxCtEoLg">_D8226EC5-82F7-4941-A04D-B405198468F4_TaskNameInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_SE0axPoVEeiVPuFUSJ4tMQ">
+        <bpmn2:dataInputAssociation id="_Y75a_EU6EemhwMtxCtEoLg">
           <bpmn2:sourceRef>changedesign</bpmn2:sourceRef>
           <bpmn2:targetRef>_D8226EC5-82F7-4941-A04D-B405198468F4_changeTskInInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_SE0axfoVEeiVPuFUSJ4tMQ">
+        <bpmn2:dataInputAssociation id="_Y75a_UU6EemhwMtxCtEoLg">
           <bpmn2:targetRef>_D8226EC5-82F7-4941-A04D-B405198468F4_SkippableInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_SE0axvoVEeiVPuFUSJ4tMQ">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_SE0ax_oVEeiVPuFUSJ4tMQ"><![CDATA[false]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_SE0ayPoVEeiVPuFUSJ4tMQ">_D8226EC5-82F7-4941-A04D-B405198468F4_SkippableInputX</bpmn2:to>
+          <bpmn2:assignment id="_Y75a_kU6EemhwMtxCtEoLg">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Y75a_0U6EemhwMtxCtEoLg"><![CDATA[false]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Y75bAEU6EemhwMtxCtEoLg">_D8226EC5-82F7-4941-A04D-B405198468F4_SkippableInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:potentialOwner id="0987f4fc-d36a-4fd2-92aa-14469042622a">
-          <bpmn2:resourceAssignmentExpression id="_SE0ayfoVEeiVPuFUSJ4tMQ">
-            <bpmn2:formalExpression id="_SE0ayvoVEeiVPuFUSJ4tMQ">rhpamAdmin</bpmn2:formalExpression>
+        <bpmn2:potentialOwner id="e2ef205e-04ca-4a7c-b967-42dadc6ee614">
+          <bpmn2:resourceAssignmentExpression id="_Y75bAUU6EemhwMtxCtEoLg">
+            <bpmn2:formalExpression id="_Y75bAkU6EemhwMtxCtEoLg">rhpamAdmin</bpmn2:formalExpression>
           </bpmn2:resourceAssignmentExpression>
         </bpmn2:potentialOwner>
       </bpmn2:userTask>
     </bpmn2:subProcess>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_SE0ay_oVEeiVPuFUSJ4tMQ">
-    <bpmndi:BPMNPlane id="_SE0azPoVEeiVPuFUSJ4tMQ" bpmnElement="hondaapprovalprocess.designChangeProcessor">
+  <bpmndi:BPMNDiagram id="_Y75bA0U6EemhwMtxCtEoLg">
+    <bpmndi:BPMNPlane id="_Y75bBEU6EemhwMtxCtEoLg" bpmnElement="hondaapprovalprocess.designChangeProcessor">
       <bpmndi:BPMNShape id="shape__5A380B07-D729-41F8-85EB-014A92307EF0" bpmnElement="_5A380B07-D729-41F8-85EB-014A92307EF0">
         <dc:Bounds height="250.0" width="650.0" x="442.0" y="27.0"/>
       </bpmndi:BPMNShape>
@@ -194,19 +174,19 @@ kcontext.setVariable("changedesign",data);
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_SE0azfoVEeiVPuFUSJ4tMQ" type="BPSimData">
+  <bpmn2:relationship id="_Y75bBUU6EemhwMtxCtEoLg" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_7D0AD522-A63C-41DD-AE10-9BC60B3C4871" id="_SE0azvoVEeiVPuFUSJ4tMQ">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_7D0AD522-A63C-41DD-AE10-9BC60B3C4871" id="_Y75bBkU6EemhwMtxCtEoLg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E4A5FFA0-1F60-4EDB-9091-C831BE574113" id="_SE1BwPoVEeiVPuFUSJ4tMQ">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E4A5FFA0-1F60-4EDB-9091-C831BE574113" id="_Y75bB0U6EemhwMtxCtEoLg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -229,7 +209,7 @@ kcontext.setVariable("changedesign",data);
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_SEzzoPoVEeiVPuFUSJ4tMQ</bpmn2:source>
-    <bpmn2:target>_SEzzoPoVEeiVPuFUSJ4tMQ</bpmn2:target>
+    <bpmn2:source>_Y74z4EU6EemhwMtxCtEoLg</bpmn2:source>
+    <bpmn2:target>_Y74z4EU6EemhwMtxCtEoLg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
