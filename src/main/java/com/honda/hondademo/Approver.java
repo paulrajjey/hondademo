@@ -6,12 +6,33 @@ package com.honda.hondademo;
 
 public class Approver implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Approver() {
-    }
+	private java.lang.String approverId;
+	private java.lang.String department;
 
+	public Approver() {
+	}
 
+	public java.lang.String getApproverId() {
+		return this.approverId;
+	}
 
+	public void setApproverId(java.lang.String approverId) {
+		this.approverId = approverId;
+	}
+
+	public java.lang.String getDepartment() {
+		return this.department;
+	}
+
+	public void setDepartment(java.lang.String department) {
+		this.department = department;
+	}
+
+	public Approver(java.lang.String approverId, java.lang.String department) {
+		this.approverId = approverId;
+		this.department = department;
+	}
 
 }
